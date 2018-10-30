@@ -1,0 +1,107 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    background: #fffdf4;
+    color: #331C10;
+}
+
+header {
+    padding-bottom: 70px;
+}
+
+h2, a {
+  color: #672c8f;
+  margin-top: 0;
+}
+
+#title {
+    font-size: 50px;
+    text-align: center;
+    color: #672c8f;
+}
+
+.long-neck-top {
+    width: 60vw;
+    position: absolute;
+    top: 5px;
+    left: 15%;
+    display: block;
+    z-index: -1;
+}
+
+blockquote {
+    background: linear-gradient(to right, #f5c241, #eda941);
+    border-radius: 9px;
+    padding: 10px;
+}
+
+.poem_head {
+    background-color: #fffdf4;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+}
+
+.poem_title {
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.poem_title p {
+    font-weight: 400;
+}
+
+.poem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poem-img {
+    display: inline-block;
+}
+
+.poem-img img {
+    width: 10vw;
+    padding: 5px;
+}
+
+#facts {
+  margin: 40px;
+}
+
+#facts li {
+  margin-bottom: 10px;
+}
+
+#facts a {
+  float: right;
+}
+
+#img-div {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#image {
+  width: 40vw;
+  border: solid 6px #eda941;
+  border-radius: 9px;
+}
+
+.long_neck-bottom {
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+footer p {
+  text-align: center;
+}
