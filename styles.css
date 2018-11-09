@@ -1,80 +1,77 @@
 body {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
-    background: #fffdf4;
-    color: #331C10;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  background: #fffdf4;
+  color: #331C10;
 }
 
-header {
-    padding-bottom: 70px;
+main {
+  padding: 10px;
 }
 
-h2, a {
+h2 {
+  color: #672c8f;
+  margin-top: 0;
+  font-size: 3vw;
+}
+
+a {
   color: #672c8f;
   margin-top: 0;
 }
 
-#title {
-    font-size: 50px;
-    text-align: center;
-    color: #672c8f;
-}
-
 .long-neck-top {
-    width: 60vw;
-    position: absolute;
-    top: 5px;
-    left: 15%;
-    display: block;
-    z-index: -1;
+  width: 50vw;
+  display: block;
+  margin: 1vh auto;
 }
 
-blockquote {
-    background: linear-gradient(to right, #f5c241, #eda941);
-    border-radius: 9px;
-    padding: 10px;
+#poem-whole {
+  background: linear-gradient(to right, #f5c241, #eda941);
+  border-radius: 9px;
+  padding: 10px;
 }
 
-.poem_head {
-    background-color: #fffdf4;
-    border-radius: 9px;
-    display: flex;
-    flex-direction: row;
+.poem-head {
+  background-color: #fffdf4;
+  border-radius: 9px;
+  flex-direction: row;
 }
 
-.poem_title {
-    display: inline-block;
-    margin-top: 25px;
-    margin-left: 30px;
+.poem-title {
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 30px;
 }
 
-.poem_title p {
-    font-weight: 400;
+.poem-title p {
+  font-weight: 400;
+  font-size: 2vw;
 }
 
 .poem {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
 }
 
 .poem-img {
-    display: inline-block;
+  display: inline-block;
 }
 
 .poem-img img {
-    width: 10vw;
-    padding: 5px;
+  width: 10vw;
+  padding: 5px;
 }
 
-#facts {
-  margin: 40px;
+#tribute-info {
+  margin-top: 20px;
 }
 
-#facts li {
+#tribute-info li {
   margin-bottom: 10px;
 }
 
-#facts a {
+#tribute-link {
   float: right;
 }
 
@@ -86,17 +83,28 @@ blockquote {
 
 #image {
   width: 40vw;
+  margin: 0 auto;
   border: solid 6px #eda941;
   border-radius: 9px;
 }
 
-.long_neck-bottom {
-    width: 60vw;
+#img-caption {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+footer {
+  clear: right;
+}
+
+.long-neck-bottom {
+    width: 50vw;
     display: block;
-    margin: 0 auto;
+    margin: 1vh auto;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
@@ -105,3 +113,51 @@ blockquote {
 footer p {
   text-align: center;
 }
+
+/*@media only screen and (min-width : 320px) and (max-width : 520px) {*/
+  
+/*  header {*/
+/*    padding-bottom: 70px;*/
+/*}*/
+  
+/*   #title {*/
+/*    font-size: 1.5em;*/
+/*  }*/
+  
+/*  .long-neck-top {*/
+/*    width: 75vw;*/
+/*    height: auto;*/
+/*    top: 1.5vh;*/
+/*    left: 7vw;*/
+/*  }*/
+  
+/*  .poem-head {*/
+/*    border-radius: 9px;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+  
+/*  .poem {*/
+/*    display: block;*/
+/*  }*/
+  
+/*  .poem-img img {*/
+/*    width: 15vw;*/
+/*}*/
+  
+/*}*/
+
+/*@media only screen and (min-width : 521px) and (max-width : 767px) {*/
+  
+/*   #title {*/
+/*    font-size: 1.5em;*/
+/*  }*/
+  
+/*  .long-neck-top {*/
+/*    width: 75vw;*/
+/*    height: auto;*/
+/*    top: 2.5vh;*/
+/*    left: 9vw;*/
+/*  }*/
+  
+/*}*/

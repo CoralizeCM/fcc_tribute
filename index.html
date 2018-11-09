@@ -3,11 +3,12 @@
   
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FCC: Tribute Page</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
@@ -15,15 +16,15 @@
   
   <body>
     <main id="main">
-      <header>
-        <h1 id="title">Gung-ho Giraffe</h1>
-        <img class="long-neck-top" src="images/giraffe-1.png"></img>
+      <header class="container-fluid">
+        <h1 class="sr-only" id="title">Gung-ho Giraffe</h1>
+        <img class="long-neck-top" src="images/ghg-title.png"></img>
       </header>
     
-      <blockquote>
-        <div class="poem_head">
-          <div class="poem-img"><img src="images/giraffe-6.png"></img></div>
-          <div class="poem_title">
+      <div class="container-fluid" id="poem-whole">
+        <div class="poem-head">
+          <div class="poem-img"><img src="images/curiaffe.png"></img></div>
+          <div class="poem-title">
             <h2>A Giraffe Ate Your Tulips</h2>
             <p>by Patti Masterman</p>
           </div>
@@ -81,14 +82,15 @@
         </div>
       
         <a href="https://www.poemhunter.com/poems/giraffe/page-1/28160167/" target="blank">poemhunter.com</a>
-      </blockquote>
+      </div>
       
-      <div id="facts">
+      <div id="tribute-info" class="container-fluid">
         <h2>Fun Facts</h2>
         <div id="fact-list">
           <ul>
             <div id="img-div">
-              <img id="image" src="images/egiraffe-3.jpg"></img>
+              <img id="image" class="img-thumbnail" src="images/egiraffe-3.jpg" alt="Photo of giraffe"></img>
+              <figcaption id="img-caption">Calcium deposits on an older male.</figcaption>
             </div>
            <li>The giraffe is the tallest mammal in the world, standing at around 4-5m high. That’s over a meter higher than a double-decker bus.</li>
            <li>Despite being incredibly tall, giraffes still only have seven vertebrae in their neck – the same number as humans and most other mammals.</li>
@@ -100,19 +102,19 @@
            <li>Giraffe tongues are bluish-purple and between 45-50cm long.</li>
            <li>To protect the giraffe’s brain from sudden changes in blood pressure when it lowers its head to drink, it has valves to stop the back-flow of blood and elastic-walled vessels that dilate and constrict to manage flow. NASA has done research on the blood vessels in giraffe legs to get inspiration for human space suits.</li>
            <li>Just like human fingerprints, no two giraffes have the same coat pattern. It is thought that the coat pattern on a giraffe doesn’t just serve to camouflage the animal, but also helps with temperature regulation too. The coloured skin patches can act to dissipate heat around the body, as the temperature of the skin is slightly higher in darker regions, facilitating the dilation of vessels beneath the skin’s surface.</li>
-           <li>As a giraffe ages, calcium deposits form on the skull, making it heavier and more robust, and therefore an effective weapon.</li>
+           <li>As a giraffe ages, calcium deposits form on the skull, making it heavier and more robust, and therefore an effective weapon. An example of this can be seen in the photo above.</li>
           </ul>
-          <a href="https://www.discoverwildlife.com/animal-facts/mammals/21-amazing-facts-about-giraffes-you-might-not-know/" target="blank">discoverwildlife.com</a><br>
-          <a href="https://africageographic.com/blog/the-iconic-giraffe-demands-respect/" target="blank">africageographic.com</a>
+          <a id="tribute-link" href="https://www.discoverwildlife.com/animal-facts/mammals/21-amazing-facts-about-giraffes-you-might-not-know/" target="blank">discoverwildlife.com</a><br>
+          <a id="tribute-link" href="https://africageographic.com/blog/the-iconic-giraffe-demands-respect/" target="blank">africageographic.com</a>
         </div>
       </div>
-    </main>
     
-    <footer>
-      <img class="long_neck-bottom" src="images/giraffe-1.png"></img>
+    <footer class="container-fluid">
+      <img class="long-neck-bottom" src="images/long-raffe.png"></img>
+      <p>&copy; 2018, Coralize Calder-Murphy</p>
       <p>Giraffe images sourced from <a href="https://www.freevector.com/free-cartoon-giraffe-vector-19852">FreeVector.com</a></p>
     </footer>
-    
+    </main>
   </body>
   
 </html>
